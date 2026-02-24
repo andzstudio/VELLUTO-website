@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Velluto | Elegance served after dark</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&family=Pinyon+Script&display=swap" rel="stylesheet">
+
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+<style>
+    html.lenis, html.lenis body { height: auto; width: 100vw; }
+    .lenis.lenis-smooth { scroll-behavior: auto !important; }
+    .lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+    .lenis.lenis-stopped { overflow: hidden; }
+    .lenis.lenis-smooth iframe { pointer-events: none; }
+</style>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/story.css">
+<link rel="stylesheet" href="css/signature.css">
+<link rel="stylesheet" href="css/menu.css"> 
+<link rel="stylesheet" href="css/rezervari.css"> 
+<link rel="stylesheet" href="css/contact.css"> 
+</head>
+<body>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    main: '#080303',
+                    sec: '#120505',
+                    accent: '#C5A059',
+                    glovo: '#FFC244',
+                    textM: '#E8DCC8',
+                    textS: '#8A8175'
+                },
+                fontFamily: {
+                    title: ['"Pinyon Script"', 'cursive'],
+                    body: ['Montserrat', 'sans-serif']
+                },
+                animation: {
+                    'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                }
+            }
+        }
+    }
+</script>
+<nav class="navbar">
+    <div class="nav-left reveal-up">
+        <img src="img/logo.png" alt="Velluto Logo" class="logo-img" onerror="this.style.display='none'">
+        <span class="logo-text">Velluto</span>
+    </div>
+
+    <div class="nav-center reveal-up delay-1">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#our-story">Our Story</a></li>
+            <li><a href="#signature-dishes">Signature</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="nav-right reveal-up delay-2">
+        <div class="social-icons">
+            <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+            <a href="#" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+            <a href="#" aria-label="TikTok"><i class="ph ph-tiktok-logo"></i></a>
+        </div>
+        <button class="btn btn-primary"><a href="#velluto-booking">Book a Table</a></button>
+    </div>
+
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+
+<section id="home" class="home-section">
+      <div class="home-content-wrapper">
+          <div class="home-top">
+              <h1 class="slogan reveal-up delay-3">
+                  <span class="slogan-main">Elegance,</span>
+                  <span class="slogan-sub">served after dark.</span>
+              </h1>
+          </div>
+          <div class="home-bottom">
+              <div class="home-info reveal-up delay-4">
+                  <div class="info-item">
+                      <i class="ph ph-clock"></i>
+                      <span>Mon–Sun: 18:00 – 00:00</span>
+                  </div>
+                  <div class="info-item">
+                      <i class="ph ph-map-pin"></i>
+                      <span>Romania, Galati</span>
+                  </div>
+              </div>
+              <div class="home-right reveal-up delay-5">
+                  <p class="description">
+                      Velluto redefines dining with a borderless approach to world cuisine. We invite you to indulge in an exquisite blend of multi-cultural dishes, enveloped in a rich, velvety setting designed for lingering evenings and intimate moments.
+                  </p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section id="our-story">
+      <div class="story-bg-layer"></div>
+      <div class="story-top-fade"></div>
+      <div class="story-bottom-fade"></div>
+      <div class="vertical-text-container">
+          <div class="v-text-left gs-vtext">LEGACY</div>
+          <div class="v-text-right gs-vtext">EXCELLENCE</div>
+      </div>
+      <div class="story-cards-grid">
+          <div class="story-card-wrapper gs-card">
+              <div class="story-card">
+                  <div class="card-icon"><i class="ph-fill ph-crown"></i></div>
+                  <div class="card-year">1985</div>
+                  <div class="card-title">The Foundation</div>
+                  <div class="card-text">Born in the heart of Galati, Velluto was never conceived as a mere dining establishment. It was built as a sanctuary of taste. Since our inception, we have laid the cornerstone of what would become the city's undisputed culinary pinnacle.</div>
+              </div>
+          </div>
+          <div class="story-card-wrapper gs-card">
+              <div class="story-card">
+                  <div class="card-icon"><i class="ph-fill ph-fork-knife"></i></div>
+                  <div class="card-year">Nice Dining</div>
+                  <div class="card-title">A Borderless Approach</div>
+                  <div class="card-text">We pioneered the <strong>Nice Dining</strong> concept—a deliberate departure from the rigid formalities of traditional fine dining. Our menu is a tapestry where classic techniques meet multi-cultural fusion. Global inspiration executed with local refinement.</div>
+              </div>
+          </div>
+        <div class="story-card-wrapper gs-card">
+            <div class="story-card">
+                <div class="card-icon"><i class="ph-fill ph-martini"></i></div>
+                <div class="card-year">Velvet</div>
+                <div class="card-title">Served After Dark</div>
+                <div class="card-text">Step into a space bathed in warm, amber illumination. Surrounded by premium materials and modern textures, the interior of Velluto is meticulously engineered to be a cozy haven, crafted exclusively for the refined.</div>
+            </div>
+        </div>
+        <div class="story-card-wrapper gs-card">
+            <div class="story-card">
+                <div class="card-icon"><i class="ph-fill ph-diamond"></i></div>
+                <div class="card-year">2025</div>
+                <div class="card-title">40 Years of Mastery</div>
+                <div class="card-text">What defines a legacy? Relentless consistency. After four decades, Velluto remains the absolute benchmark of Galati. It is our elevated standard of guest service and iconic signature dishes that permanently shape the culinary landscape.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="signature-dishes" class="wow-signature-section">
+    <div class="sig-header reveal-up">
+        <h2 class="sig-subtitle">The Masterpieces</h2>
+        <h3 class="sig-title">Signature Dishes</h3>
+    </div>
+
+    <div class="wow-accordion">
+        
+        <div class="wow-card" data-index="1">
+            <div class="wow-card-bg">
+                <img src="img/food/signature/sign-2.png" alt="Pera Gurmand">
+                <div class="wow-overlay"></div>
+            </div>
+            <div class="wow-vertical-title"><span>Pera Gurmand</span></div>
+            
+            <div class="wow-content">
+                <div class="wow-meta">
+                    <span class="wow-weight">420g</span> <span class="wow-dot"></span> <span class="wow-price">59 lei</span>
+                </div>
+                <h4 class="wow-dish-name">Pera Gurmand</h4>
+                <p class="wow-dish-desc">Beef ragout 70g, mashed potatoes 150g, pressed cheese 50g, parmesan 50g, sautéed vegetables 100g, sesame breadcrumb coating.</p>
+            </div>
+        </div>
+
+        <div class="wow-card active" data-index="2">
+            <div class="wow-card-bg">
+                <img src="img/food/signature/sign-1.png" alt="Beef Tenderloin on Hot Stone">
+                <video src="img/food/signature/sign-1.mp4" class="wow-hover-video" muted loop playsinline></video>
+                <div class="wow-overlay"></div>
+            </div>
+            <div class="wow-vertical-title"><span>Signature</span></div>
+            
+            <div class="wow-content">
+                <div class="wow-meta">
+                    <span class="wow-weight">750g</span> <span class="wow-dot"></span> <span class="wow-price">149 lei</span>
+                </div>
+                <h4 class="wow-dish-name">Beef Tenderloin <br> on Hot Stone</h4>
+                <p class="wow-dish-desc">Beef tenderloin 250g, potato wedges 100g, broccoli 50g, baby carrots 50g, cheese sauce (butter, blue cheese, cooking cream) 60g, Chimichurri sauce 60g, cherry tomatoes 80g.</p>
+                <div class="wow-pairing">
+                    <i class="ph ph-wine"></i>
+                    <div class="pair-text">
+                        <strong>We recommend: Our Special Dry Red Wine</strong><br>
+                        <span>Glass 180 ml - 25 Lei | Bottle 750 ml - 100 Lei</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wow-card" data-index="3">
+            <div class="wow-card-bg">
+                <img src="img/food/signature/sign-3.png" alt="Gold Leaf Beef Tenderloin">
+                <div class="wow-overlay"></div>
+            </div>
+            <div class="wow-vertical-title"><span>Gold Leaf</span></div>
+            
+            <div class="wow-content">
+                <div class="wow-meta">
+                    <span class="wow-weight">550g</span> <span class="wow-dot"></span> <span class="wow-price">159 lei</span>
+                </div>
+                <h4 class="wow-dish-name">Gold Leaf <br> Beef Tenderloin</h4>
+                <p class="wow-dish-desc">Beef tenderloin 250g, potato gratin 120g, iceberg lettuce 50g, chocolate and chili sauce 60g.</p>
+            </div>
+        </div>
+        <div class="story-bottom-fade"></div>
+    </div>
+</section>
+
+<section id="menu" class="menu-section">
+    <div class="menu-top-mask"></div>
+    <div class="menu-container">
+        
+        <div class="menu-card side-card left-card reveal-up">
+            <div class="slider-wrapper" id="slider-left">
+                <img src="img/food/aperitiv/aperitiv-1.png" class="menu-slide active" alt="Velluto Dish" onerror="this.src='https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=800&auto=format&fit=crop'">
+                <img src="img/food/drinks/drink-2.png" class="menu-slide" alt="Velluto Dish" onerror="this.src='https://images.unsplash.com/photo-1547592180-85f173990554?q=80&w=800&auto=format&fit=crop'">
+                <img src="img/food/paste/paste-1.png" class="menu-slide" alt="Velluto Dish" onerror="this.src='https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=80&w=800&auto=format&fit=crop'">
+                <img src="img/food/peste/peste-1.jpg" class="menu-slide" alt="Velluto Dish" onerror="this.src='https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?q=80&w=800&auto=format&fit=crop'">
+                <img src="img/food/salate/salate-1.png" class="menu-slide" alt="Velluto Dish" onerror="this.src='https://images.unsplash.com/photo-1600891964092-4316c288032e?q=80&w=800&auto=format&fit=crop'">
+                <div class="card-overlay"></div>
+            </div>
+        </div>
+
+        <div class="menu-card center-card reveal-up delay-2">
+            <div class="center-card-inner">
+                <div class="center-visual">
+                    <span class="huge-deco-text">Culinary</span>
+                </div>
+                <div class="center-content-modern">
+                    <span class="menu-subtitle">The Collection</span>
+                    <h2 class="menu-title">Selected Masterpieces</h2>
+                    <div class="divider-modern"></div>
+                    <p class="menu-desc">A curated symphony where global inspiration meets local refinement. Each dish tells a story of flavor, texture, and velvet elegance.</p>
+                    <button class="btn btn-primary" id="open-menu-btn">Explore The Menu</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-card side-card right-card reveal-up delay-4">
+            <div class="slider-wrapper" id="slider-right">
+                <img src="img/food/aperitiv/aperitiv-2.png" class="menu-slide active" alt="Velluto Dish" onerror="this.src='https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop'">
+                <img src="img/food/drinks/drink-4.png" class="menu-slide" alt="Velluto Dish" onerror="this.src='https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=800&auto=format&fit=crop'">
+                <img src="img/food/paste/paste-2.png" class="menu-slide" alt="Velluto Dish" onerror="this.src='https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=80&w=800&auto=format&fit=crop'">
+                <img src="img/food/peste/peste-3.png" class="menu-slide" alt="Velluto Dish" onerror="this.src='https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?q=80&w=800&auto=format&fit=crop'">
+                <img src="img/food/salate/salate-3.png" class="menu-slide" alt="Velluto Dish" onerror="this.src='https://images.unsplash.com/photo-1600891964092-4316c288032e?q=80&w=800&auto=format&fit=crop'">
+                <div class="card-overlay"></div>
+            </div>
+        </div>
+        <div class="menu-bottom-mask"></div>
+    </div>
+</section>
+
+<section id="velluto-booking" class="vb-section">
+    <div class="vb-bg-glow"></div>
+    <div class="rez-top-mask"></div>
+    <div class="vb-container">
+        
+        <div class="vb-left">
+            <div class="vb-header">
+                <span class="vb-subtitle">Reserve</span>
+                <h2 class="vb-title">Your<br>Evening</h2>
+            </div>
+
+            <div class="vb-visual-frame">
+                <img src="img/food/signature/sign-1.png" alt="Velluto Experience" id="vb-dynamic-img">
+                
+                <div class="vb-glass-overlay">
+                    <div class="vb-summary-compact">
+                        <div class="vb-sum-header">
+                            <span class="vb-sum-label">Your Experience</span>
+                            <h4 id="sum-exp">Select an experience</h4>
+                        </div>
+                        
+                        <div class="vb-sum-metrics">
+                            <div class="metric"><i class="ph ph-users"></i> <span id="sum-guests">2 Guests</span></div>
+                            <div class="metric-divider"></div>
+                            <div class="metric"><i class="ph ph-calendar-blank"></i> <span id="sum-date">-</span></div>
+                            <div class="metric-divider"></div>
+                            <div class="metric"><i class="ph ph-clock"></i> <span id="sum-time">-</span></div>
+                        </div>
+
+                        <div class="vb-sum-footer">
+                            <div class="vb-sum-detail">
+                                <span class="lbl">Vibe:</span> <span class="val" id="sum-vibe">-</span>
+                            </div>
+                            <div class="vb-sum-detail">
+                                <span class="lbl">Extras:</span> <span class="val" id="sum-extras" class="truncate">None</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="vb-right">
+            <div class="vb-steps-wrapper">
+
+                <div class="vb-step active" data-step="1">
+                    <div class="vb-step-header">
+                        <span class="step-num">01</span>
+                        <h3 class="step-title">The Experience</h3>
+                    </div>
+                    <div class="vb-step-content">
+                        <div class="vb-cards-grid">
+                            <div class="vb-exp-card" data-exp="main" data-img="img/food/signature/sign-2.png">
+                                <div class="vb-card-inner">
+                                    <h4>The Velvet Room</h4>
+                                    <p>Our signature main dining hall. Perfect for absorbing the vibrant, elegant atmosphere of Velluto.</p>
+                                </div>
+                            </div>
+                            <div class="vb-exp-card" data-exp="cellar" data-img="img/food/signature/sign-1.png">
+                                <div class="vb-card-inner">
+                                    <h4>The Private Cellar</h4>
+                                    <p>An intimate, secluded space surrounded by our rarest vintages. Ideal for romantic evenings.</p>
+                                </div>
+                            </div>
+                            <div class="vb-exp-card" data-exp="chef" data-img="img/food/signature/sign-3.png">
+                                <div class="vb-card-inner">
+                                    <h4>Chef's Table</h4>
+                                    <p>A front-row seat to culinary mastery. Includes a custom tasting menu curated by our Executive Chef.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn-primary vb-next-btn">Continue to Date <i class="ph ph-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="vb-step" data-step="2">
+                    <div class="vb-step-header">
+                        <span class="step-num">02</span>
+                        <h3 class="step-title">Date & Party Size</h3>
+                    </div>
+                    <div class="vb-step-content">
+                        
+                        <div class="vb-guest-selector">
+                            <span class="vb-label">Party Size</span>
+                            <div class="vb-guest-cards">
+                                <div class="vb-guest-card" data-guests="1">
+                                    <i class="ph ph-user"></i><span>1</span>
+                                </div>
+                                <div class="vb-guest-card selected" data-guests="2">
+                                    <i class="ph ph-users"></i><span>2</span>
+                                </div>
+                                <div class="vb-guest-card" data-guests="3">
+                                    <i class="ph ph-users"></i><span>3</span>
+                                </div>
+                                <div class="vb-guest-card" data-guests="4">
+                                    <i class="ph ph-users"></i><span>4</span>
+                                </div>
+                                <div class="vb-guest-card" data-guests="5">
+                                    <i class="ph ph-users"></i><span>5</span>
+                                </div>
+                                <div class="vb-guest-card" data-guests="6">
+                                    <i class="ph ph-users"></i><span>6</span>
+                                </div>
+                            </div>
+                            <span class="vb-guest-note">For parties larger than 6, please contact us directly.</span>
+                        </div>
+
+                        <div class="vb-calendar-wrapper">
+                            <span class="vb-label" style="margin-top: 20px;">Select Date</span>
+                            <div class="vb-cal-header">
+                                <button id="cal-prev"><i class="ph ph-caret-left"></i></button>
+                                <h4 id="cal-month-year">March 2026</h4>
+                                <button id="cal-next"><i class="ph ph-caret-right"></i></button>
+                            </div>
+                            <div class="vb-cal-days-row">
+                                <span>Su</span><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+                            </div>
+                            <div class="vb-cal-grid" id="vb-calendar-grid">
+                                </div>
+                        </div>
+                        <button class="btn-primary vb-next-btn">Continue to Time <i class="ph ph-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="vb-step" data-step="3">
+                    <div class="vb-step-header">
+                        <span class="step-num">03</span>
+                        <h3 class="step-title">Time & Atmosphere</h3>
+                    </div>
+                    <div class="vb-step-content">
+                        <span class="vb-label">Select Time</span>
+                        <div class="vb-time-grid" id="vb-time-slots">
+                            </div>
+
+                        <div class="vb-vibe-selector">
+                            <span class="vb-label" style="margin-top: 30px;">Preferred Atmosphere</span>
+                            <div class="vb-vibe-options">
+                                <label class="vb-vibe-label">
+                                    <input type="radio" name="vibe" value="Intimate & Quiet" checked>
+                                    <div class="vb-vibe-box">
+                                        <div class="vb-vibe-check">
+                                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        </div>
+                                        <span>Intimate & Quiet</span>
+                                    </div>
+                                </label>
+                                <label class="vb-vibe-label">
+                                    <input type="radio" name="vibe" value="Lively & Central">
+                                    <div class="vb-vibe-box">
+                                        <div class="vb-vibe-check">
+                                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        </div>
+                                        <span>Lively & Central</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <button class="btn-primary vb-next-btn">View Enhancements <i class="ph ph-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="vb-step" data-step="4">
+                    <div class="vb-step-header">
+                        <span class="step-num">04</span>
+                        <h3 class="step-title">The Extra Touch</h3>
+                    </div>
+                    <div class="vb-step-content">
+                        <p class="vb-step-desc">Elevate your evening with our curated add-ons, prepared in advance for your arrival.</p>
+                        
+                        <div class="vb-extras-list">
+                            <label class="vb-extra-item">
+                                <div class="extra-info">
+                                    <h5>Dom Pérignon Welcome</h5>
+                                    <p>Two glasses of chilled vintage champagne waiting at your table.</p>
+                                </div>
+                                <div class="extra-action">
+                                    <span class="price">+350 Lei</span>
+                                    <input type="checkbox" value="Champagne" class="extra-check">
+                                    <div class="toggle-switch"></div>
+                                </div>
+                            </label>
+
+                            <label class="vb-extra-item">
+                                <div class="extra-info">
+                                    <h5>Oscietra Caviar Bump</h5>
+                                    <p>A luxurious pairing to start your culinary journey.</p>
+                                </div>
+                                <div class="extra-action">
+                                    <span class="price">+200 Lei</span>
+                                    <input type="checkbox" value="Caviar" class="extra-check">
+                                    <div class="toggle-switch"></div>
+                                </div>
+                            </label>
+
+                            <label class="vb-extra-item">
+                                <div class="extra-info">
+                                    <h5>Velvet Rose Bouquet</h5>
+                                    <p>A fresh bouquet of deep red roses presented upon seating.</p>
+                                </div>
+                                <div class="extra-action">
+                                    <span class="price">+150 Lei</span>
+                                    <input type="checkbox" value="Roses" class="extra-check">
+                                    <div class="toggle-switch"></div>
+                                </div>
+                            </label>
+                        </div>
+                        <button class="btn-primary vb-next-btn">Final Details <i class="ph ph-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="vb-step" data-step="5">
+                    <div class="vb-step-header">
+                        <span class="step-num">05</span>
+                        <h3 class="step-title">Finalize Request</h3>
+                    </div>
+                    <div class="vb-step-content">
+                        <div class="vb-form-group">
+                            <input type="text" class="vb-input" placeholder="Full Name" id="req-name" required>
+                        </div>
+                        <div class="vb-form-group-row">
+                            <input type="email" class="vb-input half" placeholder="Email Address" id="req-email" required>
+                            <input type="tel" class="vb-input half" placeholder="Phone Number" id="req-phone" required>
+                        </div>
+                        <div class="vb-form-group">
+                            <textarea class="vb-input" placeholder="Any final requests or dietary restrictions?" rows="3" id="req-notes"></textarea>
+                        </div>
+                        
+                        <div class="magnetic-wrap" id="submit-magnetic">
+                            <button class="vb-submit-btn disabled" id="final-submit">
+                                <span class="btn-text">Confirm Booking</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact" class="arch-contact">
+    <div class="arch-mask mask-top"></div>
+    <div class="arch-mask mask-bottom"></div>
+
+    <div class="arch-container">
+        
+        <div class="arch-pillar" data-index="1">
+            <div class="arch-bg">
+                <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?q=80&w=1400&auto=format&fit=crop" class="bg-parallax" alt="Private Events">
+                <div class="arch-overlay"></div>
+                <div class="arch-red-glow"></div>
+            </div>
+
+            <div class="arch-idle">
+                <span class="arch-num">01</span>
+                <h2 class="arch-title-vertical">Private Events</h2>
+            </div>
+
+            <div class="arch-active">
+                <div class="arch-header">
+                    <div>
+                        <span class="arch-subtitle form-el">01 // Secure the venue</span>
+                        <h3 class="arch-title">
+                            <span class="mask-wrap"><span class="mask-text">Private</span></span>
+                            <span class="mask-wrap"><span class="mask-text arch-gold">Events</span></span>
+                        </h3>
+                    </div>
+                    <div class="mag-close-wrap">
+                        <button class="arch-close"><i class="ph ph-x"></i></button>
+                    </div>
+                </div>
+
+                <form class="arch-form" onsubmit="event.preventDefault();">
+                    <div class="arch-row">
+                        <div class="arch-input-wrap form-el">
+                            <input type="text" id="ev-name" placeholder=" " required>
+                            <label for="ev-name">Your Signature</label>
+                            <div class="arch-line"></div>
+                        </div>
+                        <div class="arch-input-wrap form-el">
+                            <input type="email" id="ev-email" placeholder=" " required>
+                            <label for="ev-email">Electronic Mail</label>
+                            <div class="arch-line"></div>
+                        </div>
+                    </div>
+                    <div class="arch-input-wrap form-el">
+                        <input type="text" id="ev-date" placeholder=" " required>
+                        <label for="ev-date">Desired Date & Guest Count</label>
+                        <div class="arch-line"></div>
+                    </div>
+                    <div class="arch-input-wrap form-el">
+                        <textarea id="ev-msg" placeholder=" " rows="1" required></textarea>
+                        <label for="ev-msg">Event Details</label>
+                        <div class="arch-line"></div>
+                    </div>
+                    <button type="submit" class="arch-submit form-el">
+                        <div class="btn-hover-fill"></div>
+                        <span class="z-2">Transmit Request</span> <i class="ph ph-arrow-right z-2"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="arch-pillar" data-index="2">
+            <div class="arch-bg">
+                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1400&auto=format&fit=crop" class="bg-parallax" alt="Press & Media">
+                <div class="arch-overlay"></div>
+                <div class="arch-red-glow"></div>
+            </div>
+            <div class="arch-idle">
+                <span class="arch-num">02</span>
+                <h2 class="arch-title-vertical">Press & Media</h2>
+            </div>
+            <div class="arch-active">
+                <div class="arch-header">
+                    <div>
+                        <span class="arch-subtitle form-el">02 // Public Relations</span>
+                        <h3 class="arch-title">
+                            <span class="mask-wrap"><span class="mask-text">Press &</span></span>
+                            <span class="mask-wrap"><span class="mask-text arch-gold">Media</span></span>
+                        </h3>
+                    </div>
+                    <div class="mag-close-wrap">
+                        <button class="arch-close"><i class="ph ph-x"></i></button>
+                    </div>
+                </div>
+                <form class="arch-form" onsubmit="event.preventDefault();">
+                    <div class="arch-row">
+                        <div class="arch-input-wrap form-el">
+                            <input type="text" id="pr-name" placeholder=" " required>
+                            <label for="pr-name">Publication / Agency</label>
+                            <div class="arch-line"></div>
+                        </div>
+                        <div class="arch-input-wrap form-el">
+                            <input type="email" id="pr-email" placeholder=" " required>
+                            <label for="pr-email">Email Address</label>
+                            <div class="arch-line"></div>
+                        </div>
+                    </div>
+                    <div class="arch-input-wrap form-el">
+                        <textarea id="pr-msg" placeholder=" " rows="1" required></textarea>
+                        <label for="pr-msg">Inquiry Details</label>
+                        <div class="arch-line"></div>
+                    </div>
+                    <button type="submit" class="arch-submit form-el">
+                        <div class="btn-hover-fill"></div>
+                        <span class="z-2">Contact PR</span> <i class="ph ph-arrow-right z-2"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="arch-pillar" data-index="3">
+            <div class="arch-bg">
+                <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=1400&auto=format&fit=crop" class="bg-parallax" alt="Careers">
+                <div class="arch-overlay"></div>
+                <div class="arch-red-glow"></div>
+            </div>
+            <div class="arch-idle">
+                <span class="arch-num">03</span>
+                <h2 class="arch-title-vertical">Careers</h2>
+            </div>
+            <div class="arch-active">
+                <div class="arch-header">
+                    <div>
+                        <span class="arch-subtitle form-el">03 // Join the Vanguard</span>
+                        <h3 class="arch-title">
+                            <span class="mask-wrap"><span class="mask-text">Culinary</span></span>
+                            <span class="mask-wrap"><span class="mask-text arch-gold">Careers</span></span>
+                        </h3>
+                    </div>
+                    <div class="mag-close-wrap">
+                        <button class="arch-close"><i class="ph ph-x"></i></button>
+                    </div>
+                </div>
+                <form class="arch-form" onsubmit="event.preventDefault();">
+                    <div class="arch-row">
+                        <div class="arch-input-wrap form-el">
+                            <input type="text" id="cr-name" placeholder=" " required>
+                            <label for="cr-name">Full Name</label>
+                            <div class="arch-line"></div>
+                        </div>
+                        <div class="arch-input-wrap form-el">
+                            <input type="text" id="cr-role" placeholder=" " required>
+                            <label for="cr-role">Desired Position</label>
+                            <div class="arch-line"></div>
+                        </div>
+                    </div>
+                    <div class="arch-input-wrap form-el">
+                        <input type="text" id="cr-link" placeholder=" " required>
+                        <label for="cr-link">Portfolio / LinkedIn URL</label>
+                        <div class="arch-line"></div>
+                    </div>
+                    <button type="submit" class="arch-submit form-el">
+                        <div class="btn-hover-fill"></div>
+                        <span class="z-2">Submit Application</span> <i class="ph ph-arrow-right z-2"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="arch-pillar" data-index="4">
+            <div class="arch-bg">
+                <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?q=80&w=1400&auto=format&fit=crop" class="bg-parallax" alt="Management">
+                <div class="arch-overlay"></div>
+                <div class="arch-red-glow"></div>
+            </div>
+            <div class="arch-idle">
+                <span class="arch-num">04</span>
+                <h2 class="arch-title-vertical">Executive</h2>
+            </div>
+            <div class="arch-active">
+                <div class="arch-header">
+                    <div>
+                        <span class="arch-subtitle form-el">04 // General Management</span>
+                        <h3 class="arch-title">
+                            <span class="mask-wrap"><span class="mask-text">Executive</span></span>
+                            <span class="mask-wrap"><span class="mask-text arch-gold">Desk</span></span>
+                        </h3>
+                    </div>
+                    <div class="mag-close-wrap">
+                        <button class="arch-close"><i class="ph ph-x"></i></button>
+                    </div>
+                </div>
+                <form class="arch-form" onsubmit="event.preventDefault();">
+                    <div class="arch-row">
+                        <div class="arch-input-wrap form-el">
+                            <input type="text" id="ex-name" placeholder=" " required>
+                            <label for="ex-name">Name</label>
+                            <div class="arch-line"></div>
+                        </div>
+                        <div class="arch-input-wrap form-el">
+                            <input type="email" id="ex-email" placeholder=" " required>
+                            <label for="ex-email">Email</label>
+                            <div class="arch-line"></div>
+                        </div>
+                    </div>
+                    <div class="arch-input-wrap form-el">
+                        <textarea id="ex-msg" placeholder=" " rows="1" required></textarea>
+                        <label for="ex-msg">Message to Management</label>
+                        <div class="arch-line"></div>
+                    </div>
+                    <button type="submit" class="arch-submit form-el">
+                        <div class="btn-hover-fill"></div>
+                        <span class="z-2">Send Message</span> <i class="ph ph-arrow-right z-2"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</section>
+<div id="aww-menu-wrapper" class="fixed inset-0 w-full h-[100dvh] z-[10000] bg-[#050101] text-textM opacity-0 pointer-events-none transition-opacity duration-700 overflow-hidden flex flex-col font-light">
+
+    <!-- ==========================================
+         STATE 1: INTRO (CARUSEL CATEGORII MODERN)
+         ========================================== -->
+    <div id="aww-intro-view" class="absolute inset-0 w-full h-full flex flex-col z-50 overflow-hidden">
+        
+        <!-- Fundal Dinamic Cinematic -->
+        <div id="intro-dynamic-bg" class="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-20 scale-105 transition-all duration-[1.5s] ease-out"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-main via-main/60 to-transparent pointer-events-none z-10"></div>
+        
+        <!-- Header / Close Intro -->
+        <div class="absolute top-6 left-6 right-6 md:top-12 md:left-16 md:right-16 z-50 flex items-center justify-between">
+            <h3 class="font-title text-accent text-3xl md:text-5xl opacity-90">Our Collection</h3>
+            
+            <button id="close-intro-btn" class="group flex items-center gap-3 text-white hover:text-accent transition-colors duration-500 bg-white/5 md:bg-transparent w-10 h-10 md:w-auto md:h-auto justify-center rounded-full md:rounded-none backdrop-blur-md md:backdrop-blur-none">
+                <span class="uppercase tracking-[0.2em] text-[10px] hidden md:block">Close</span>
+                <i class="ph ph-x text-xl md:text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Carusel Orizontal Modern -->
+        <div class="relative z-20 w-full h-full flex items-center mt-6 md:mt-10">
+            <!-- Container cu Slider -->
+            <div id="intro-cats-container" class="cursor-grab flex items-center gap-4 md:gap-10 overflow-x-hidden hide-scroll w-full h-[65dvh] px-6 md:px-16 select-none">
+                <!-- JS va genera cardurile aici -->
+            </div>
+        </div>
+        
+        <!-- Controale Slider Inteligente -->
+        <div class="absolute bottom-6 right-6 md:bottom-12 md:right-16 flex gap-3 md:gap-4 z-50 pointer-events-auto">
+            <button id="slider-prev" class="w-10 h-10 md:w-12 md:h-12 rounded-full border border-white/20 flex items-center justify-center bg-main/50 backdrop-blur-md hover:bg-accent hover:border-accent hover:text-main transition-all duration-300 text-white"><i class="ph ph-arrow-left text-lg md:text-xl"></i></button>
+            <button id="slider-next" class="w-10 h-10 md:w-12 md:h-12 rounded-full border border-white/20 flex items-center justify-center bg-main/50 backdrop-blur-md hover:bg-accent hover:border-accent hover:text-main transition-all duration-300 text-white"><i class="ph ph-arrow-right text-lg md:text-xl"></i></button>
+        </div>
+    </div>
+
+
+    <!-- ==========================================
+         STATE 2: DISH VIEW (AERISIT, SCROLL NATURAL PE MOBIL)
+         ========================================== -->
+    <div id="aww-dish-view" class="absolute inset-0 w-full h-full flex flex-col z-40 opacity-0 pointer-events-none bg-main overflow-y-auto lg:overflow-hidden hide-scroll">
+        
+        <!-- Fundal subtil grain -->
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(197,160,89,0.03)_0%,transparent_100%)] pointer-events-none z-0 min-h-[100dvh]"></div>
+
+        <!-- HEADER FLOTANT (CATEGORII STÂNGA SUS & CLOSE DREAPTA SUS) -->
+        <header class="sticky top-0 left-0 w-full px-4 md:px-16 py-3 md:py-4 flex justify-between items-center z-50 bg-main/90 backdrop-blur-xl border-b border-white/5 flex-shrink-0 shadow-md">
+            
+            <!-- Navbar cu Scroll Orizontal (Slider nativ mobil) -->
+            <nav class="flex-1 overflow-x-auto hide-scroll pointer-events-auto snap-x snap-mandatory touch-pan-x">
+                <div id="top-cat-container" class="flex items-center gap-6 md:gap-12 pt-1 pb-1 w-max px-2">
+                    <!-- JS va genera categoriile aici -->
+                </div>
+            </nav>
+
+            <button id="close-dish-btn" class="pointer-events-auto group flex items-center justify-center bg-white/5 hover:bg-white/10 w-8 h-8 md:w-auto md:h-auto md:bg-transparent rounded-full md:rounded-none flex-shrink-0 text-textS hover:text-accent transition-all duration-300 ml-4">
+                <span class="uppercase tracking-[0.2em] text-[10px] hidden md:block mr-3">Close</span>
+                <i class="ph ph-x text-lg md:text-2xl"></i>
+            </button>
+        </header>
+
+        <!-- MAIN LAYOUT: FLEX-COL PE MOBIL (Crește cât are nevoie), FLEX-ROW PE DESKTOP -->
+        <main class="flex-1 w-full flex flex-col lg:flex-row relative z-10 lg:overflow-hidden">
+            
+            <!-- STÂNGA: POZA (PORTRET ELEGANT / MASCĂ LARGE PE MOBIL 90%) -->
+            <div class="w-full lg:w-[45%] h-auto lg:h-full flex items-center justify-center lg:justify-end lg:pr-12 relative flex-shrink-0 z-10 pt-6 pb-2 lg:py-0">
+                <!-- Imagine cu 90% lățime pe mobil, curbată generos -->
+                <div class="img-portrait relative w-[90%] lg:w-full max-w-[420px] lg:max-w-[26rem] aspect-[4/3] sm:aspect-video lg:aspect-[3/4] rounded-[2.5rem] lg:rounded-[2rem] overflow-hidden group shadow-2xl">
+                    <img id="dish-main-img" src="" alt="Dish" class="absolute inset-0 w-full h-full object-cover transform scale-100 transition-transform duration-[2s] ease-out group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/10 pointer-events-none"></div>
+                    
+                    <!-- Container Badges Suprapuse pe Poză -->
+                    <div id="dish-main-badge-container" class="absolute top-4 left-4 md:top-6 md:left-6 flex flex-col gap-2 md:gap-3 items-start"></div>
+                </div>
+            </div>
+
+            <!-- DREAPTA: DESCRIEREA (Se adaptează la conținut pe mobil) -->
+            <div class="w-full lg:w-[55%] flex-1 lg:h-full flex flex-col px-5 sm:px-8 lg:px-12 xl:px-20 lg:overflow-y-auto hide-scroll pt-4 lg:pt-20 pb-10 lg:pb-32 relative z-20">
+                
+                <!-- Cardul care ține informațiile -->
+                <div class="w-full max-w-xl mx-auto lg:mx-0 bg-white/[0.02] lg:bg-transparent lg:border-none border border-white/5 p-6 md:p-8 lg:p-0 rounded-3xl lg:rounded-none backdrop-blur-sm lg:backdrop-blur-none shadow-2xl lg:shadow-none lg:my-auto">
+                    
+                    <span id="dish-pretitle" class="text-accent font-title text-xl md:text-2xl block mb-1 gs-reveal">Velluto Special</span>
+                    
+                    <h1 id="dish-title" class="text-3xl sm:text-4xl lg:text-[3.2rem] text-textM font-extralight leading-[1.1] mb-4 gs-reveal tracking-tight">Dish Name</h1>
+                    
+                    <!-- Sistem de Servire Opțional -->
+                    <div id="dish-experience-box" class="hidden mb-4 gs-reveal">
+                        <div class="inline-flex items-center gap-2 border-l-2 border-accent pl-3 py-1 bg-accent/5 rounded-r-lg pr-4">
+                            <i class="ph-fill ph-sparkle text-accent animate-pulse-slow"></i>
+                            <span id="dish-experience-text" class="text-[9px] md:text-[10px] text-accent uppercase tracking-widest font-medium">Flambéed at the table</span>
+                        </div>
+                    </div>
+
+                    <p id="dish-desc" class="text-textS text-xs md:text-sm leading-relaxed mb-6 gs-reveal font-light">Full dish description, flavors, textures, and why it is truly special in the Velluto kitchen.</p>
+
+                    <!-- Detalii Tehnice Premium -->
+                    <div class="flex flex-wrap gap-2 mb-6 gs-reveal">
+                        <div class="flex items-center gap-1.5 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">
+                            <i class="ph ph-scales text-accent text-sm"></i>
+                            <span class="text-[8px] md:text-[9px] text-textS uppercase tracking-widest">Weight:</span>
+                            <span id="dish-weight" class="text-[10px] md:text-xs text-textM font-medium">0g</span>
+                        </div>
+                        <div class="flex items-center gap-1.5 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">
+                            <i class="ph ph-fire text-accent text-sm"></i>
+                            <span class="text-[8px] md:text-[9px] text-textS uppercase tracking-widest">Calories:</span>
+                            <span id="dish-cal" class="text-[10px] md:text-xs text-textM font-medium">0 kcal</span>
+                        </div>
+                        <div class="flex items-center gap-1.5 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">
+                            <i class="ph ph-clock text-accent text-sm"></i>
+                            <span class="text-[8px] md:text-[9px] text-textS uppercase tracking-widest">Time:</span>
+                            <span id="dish-time" class="text-[10px] md:text-xs text-textM font-medium">15 Min</span>
+                        </div>
+                        <div class="flex items-center gap-1.5 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">
+                            <i class="ph ph-martini text-accent text-sm"></i>
+                            <span class="text-[8px] md:text-[9px] text-textS uppercase tracking-widest">Perfect For:</span>
+                            <span id="dish-bestfor" class="text-[10px] md:text-xs text-textM font-medium">Occasion</span>
+                        </div>
+                    </div>
+
+                    <!-- Linie despărțitoare fină -->
+                    <div class="w-full h-[1px] bg-gradient-to-r from-white/10 to-transparent mb-6 gs-reveal"></div>
+
+                    <!-- Acțiune: Preț + Butoane (Rezervă sau Glovo) -->
+                    <div class="flex flex-col xl:flex-row items-start xl:items-center justify-between gap-5 gs-reveal">
+                        <!-- Pret -->
+                        <div class="flex flex-col">
+                            <span class="text-[8px] md:text-[9px] text-textS uppercase tracking-[0.3em] mb-1">Price</span>
+                            <span id="dish-price" class="text-2xl sm:text-3xl lg:text-4xl text-textM font-light whitespace-nowrap">0 Lei</span>
+                        </div>
+                        
+                        <!-- Actions Grid -->
+                        <div class="flex flex-row items-center w-full xl:w-auto gap-3 mt-2 xl:mt-0">
+                            
+                            <!-- BUTON: REZERVĂ MASĂ -->
+                            <button class="flex-1 xl:flex-none flex items-center justify-center gap-2 bg-white/5 border border-white/10 hover:bg-white/10 hover:border-accent px-3 py-3 md:px-5 rounded-xl transition-all duration-300">
+                                <i class="ph ph-calendar-blank text-accent text-lg"></i>
+                                <span class="uppercase tracking-[0.1em] text-[8px] sm:text-[9px] md:text-[10px] text-textM font-medium whitespace-nowrap">Book a Table</span>
+                            </button>
+                            
+                            <!-- BUTON: GLOVO -->
+                            <button class="flex-1 xl:flex-none flex items-center justify-center gap-2 bg-[#FFC244]/10 border border-[#FFC244]/30 hover:bg-[#FFC244] px-3 py-3 md:px-5 rounded-xl transition-all duration-500 group shadow-xl">
+                                <span class="uppercase tracking-[0.1em] text-[8px] sm:text-[9px] md:text-[10px] text-[#FFC244] group-hover:text-main font-medium transition-colors whitespace-nowrap">Order via</span>
+                                <img src="img/glovo.png" alt="Glovo" class="h-3 md:h-4 object-contain opacity-90 group-hover:opacity-100 group-hover:brightness-0 transition-all" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Glovo_logo.svg/1024px-Glovo_logo.svg.png'; this.onerror=null;">
+                            </button>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <!-- BOTTOM: SUGESTIILE (La final de document pe mobil, fixat jos pe desktop) -->
+        <footer class="relative lg:absolute bottom-0 left-0 w-full px-5 md:px-16 pt-8 lg:pt-16 pb-8 lg:pb-6 z-50 flex flex-col justify-end bg-main lg:bg-transparent lg:bg-gradient-to-t lg:from-main lg:via-main/95 lg:to-transparent h-auto lg:h-[140px] pointer-events-auto lg:pointer-events-none mt-auto border-t border-white/5 lg:border-none">
+            <div class="pointer-events-auto w-full">
+                <span class="text-[9px] text-textS uppercase tracking-[0.3em] block mb-3 pl-1">You Might Also Like</span>
+                <div class="w-full overflow-x-auto hide-scroll touch-pan-x">
+                    <div id="bottom-sugg-container" class="flex gap-4 md:gap-6 items-center w-max pb-2 px-1">
+                        <!-- JS va genera sugestiile -->
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</div>
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script> 
+<script src="js/script.js"></script>
+<script src="js/home.js"></script>
+<script src="js/story.js"></script>
+<script src="js/signature.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/rezervari.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,304 @@
+#our-story {
+    position: relative;
+    width: 100vw;
+    min-height: 150vh;
+    background-color: #030303;
+    color: #fff;
+    z-index: 1;
+    padding: 15vh 0;
+    overflow: hidden;
+}
+
+.story-bg-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(3, 3, 3, 0.3) 0%, rgba(3, 3, 3, 0.8) 100%), url('../img/sign-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.7;
+    z-index: -3;
+}
+
+.story-top-fade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 25vh;
+    background: linear-gradient(to bottom, #030303 0%, transparent 100%);
+    z-index: -2;
+    pointer-events: none;
+}
+
+.vertical-text-container {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.v-text-left, .v-text-right {
+    position: sticky;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8rem;
+    font-weight: 500;
+    color: rgba(197, 168, 128, 0.05);
+    text-transform: uppercase;
+    white-space: nowrap;
+    writing-mode: vertical-rl;
+}
+
+.v-text-left {
+    top: 20vh;
+    left: 2%;
+    transform: rotate(180deg);
+}
+
+.v-text-right {
+    top: 40vh;
+    float: right;
+    margin-right: 2%;
+}
+
+.story-cards-grid {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem 6rem;
+    padding: 0 10%;
+}
+
+.story-card-wrapper:nth-child(even) {
+    margin-top: 15vh;
+}
+
+.story-card {
+    background: rgba(10, 10, 10, 0.6);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(197, 168, 128, 0.15);
+    border-top: 1px solid rgba(197, 168, 128, 0.3);
+    border-left: 3px solid #C5A880;
+    padding: 3.5rem 3rem;
+    position: relative;
+    transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.story-card:hover {
+    transform: translateY(-10px);
+    background: rgba(15, 15, 15, 0.8);
+    border-color: rgba(197, 168, 128, 0.4);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5), 0 0 20px rgba(197, 168, 128, 0.05);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    color: #C5A880;
+    margin-bottom: 0.5rem;
+    transition: all 0.5s ease;
+}
+
+.story-card:hover .card-icon {
+    text-shadow: 0 0 15px rgba(197, 168, 128, 0.6);
+    transform: scale(1.1) rotate(5deg);
+}
+
+.card-year {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 4.5rem;
+    line-height: 0.8;
+    color: #ffffff;
+}
+
+.card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #C5A880;
+}
+
+.card-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #a0a0a0;
+}
+
+.card-text strong {
+    color: #fff;
+    font-weight: 400;
+}
+
+.story-cta-wrapper {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.btn-card-cta {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: #C5A880;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.85rem;
+    transition: transform 0.3s ease;
+}
+
+.btn-card-cta i {
+    font-size: 2rem;
+    border: 1px solid #C5A880;
+    border-radius: 50%;
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+
+.btn-card-cta:hover i {
+    background: #C5A880;
+    color: #000;
+    transform: translateY(5px);
+}
+
+@media (max-width: 1024px) {
+    .story-cards-grid {
+        grid-template-columns: 1fr; 
+        gap: 3rem;
+    }
+    .story-card-wrapper:nth-child(even) {
+        margin-top: 0; 
+    }
+    .v-text-left, .v-text-right {
+        font-size: 5rem; 
+    }
+}
+
+@media (max-width: 768px) {
+    .v-text-left, .v-text-right {
+        display: none; 
+    }
+
+    #our-story {
+        padding: 10vh 0;
+        min-height: auto;
+    }
+
+    .story-cards-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 3.5rem;
+        padding: 0 5% 0 50px;
+        position: relative;
+    }
+
+    .story-cards-grid::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 25px;
+        width: 1px;
+        height: 100%;
+        background: linear-gradient(to bottom, transparent, rgba(197, 168, 128, 0.4) 5%, rgba(197, 168, 128, 0.4) 95%, transparent);
+    }
+
+    .story-card {
+        background: transparent;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        border: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        position: relative;
+    }
+
+    .story-card:hover {
+        transform: none;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .card-icon {
+        position: absolute;
+        left: -25px;
+        top: 5px;
+        transform: translateX(-50%);
+        font-size: 1.4rem;
+        background: #030303;
+        color: #C5A880;
+        padding: 8px 0;
+        margin: 0;
+        z-index: 2;
+    }
+
+    .story-card:hover .card-icon {
+        transform: translateX(-50%);
+        text-shadow: none;
+    }
+
+    .card-year {
+        font-size: 3rem;
+        color: #fff;
+        margin-top: -8px;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+        color: #C5A880;
+        letter-spacing: 2px;
+    }
+
+    .card-text {
+        font-size: 0.95rem;
+        padding-right: 2%;
+    }
+
+    .story-cta-wrapper {
+        margin-top: 1rem;
+        justify-content: flex-start;
+    }
+
+    .btn-card-cta {
+        flex-direction: row;
+        font-size: 0.8rem;
+        gap: 15px;
+    }
+
+    .btn-card-cta i {
+        padding: 10px;
+        font-size: 1.2rem;
+        transform: rotate(-90deg);
+    }
+
+    .btn-card-cta:hover i {
+        transform: rotate(-90deg) translateX(5px);
+    }
+}
+.story-bottom-fade {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25vh;
+    background: linear-gradient(to top, #030303 0%, transparent 100%);
+    z-index: -2;
+    pointer-events: none;
+}

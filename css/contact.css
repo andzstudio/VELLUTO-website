@@ -1,0 +1,127 @@
+.arch-contact {
+    position: relative; width: 100vw; height: 100vh; height: 100dvh;
+    background-color: #000; overflow: hidden; z-index: 1;
+}
+
+.arch-mask { position: absolute; left: 0; width: 100%; height: 12vh; z-index: 10; pointer-events: none; }
+.mask-top { top: 0; background: linear-gradient(to bottom, #000000 20%, transparent 100%); }
+.mask-bottom { bottom: 0; background: linear-gradient(to top, #000000 20%, transparent 100%); }
+
+.arch-container { display: flex; width: 100%; height: 100%; }
+
+.arch-pillar {
+    flex: 1; position: relative; border-right: 1px solid rgba(197, 160, 89, 0.15);
+    overflow: hidden; background: #050000;
+    transition: flex 1s cubic-bezier(0.19, 1, 0.22, 1), filter 0.8s ease; 
+}
+.arch-pillar:last-child { border-right: none; }
+
+.arch-pillar.active { flex: 6; }
+.arch-pillar.inactive { filter: blur(8px) brightness(0.3); pointer-events: none; }
+
+.arch-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; }
+.arch-bg img { 
+    width: 110%; height: 110%; object-fit: cover; 
+    filter: grayscale(100%) brightness(0.4); 
+    transition: filter 1s, transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+    transform: translate(-5%, -5%) scale(1);
+}
+.arch-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); transition: 1s; }
+
+.arch-red-glow {
+    position: absolute; top: 0; left: 0; width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(138, 28, 28, 0.4) 0%, transparent 70%);
+    transform: translate(-50%, -50%); opacity: 0; transition: opacity 0.8s; pointer-events: none; mix-blend-mode: screen;
+}
+
+.arch-pillar:hover .arch-bg img { filter: grayscale(50%) brightness(0.6); }
+.arch-pillar.active .arch-bg img { filter: grayscale(10%) brightness(0.5); }
+.arch-pillar.active .arch-overlay { background: rgba(5, 0, 0, 0.8); backdrop-filter: blur(10px); }
+.arch-pillar.active .arch-red-glow { opacity: 1; }
+
+.arch-idle {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    display: flex; flex-direction: column; justify-content: space-between; align-items: center;
+    padding: 100px 0; z-index: 2; transition: opacity 0.4s ease; pointer-events: none;
+}
+.arch-num { font-size: 0.8rem; color: var(--accent); letter-spacing: 2px; }
+.arch-title-vertical {
+    writing-mode: vertical-rl; transform: rotate(180deg); font-size: 2.2rem;
+    text-transform: uppercase; font-weight: 300; letter-spacing: 6px; color: var(--text-main);
+    white-space: nowrap; transition: color 0.4s;
+}
+.arch-pillar:hover .arch-title-vertical { color: var(--accent); }
+.arch-pillar.active .arch-idle { opacity: 0; }
+
+.arch-active {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    padding: 0 10%; z-index: 3; display: flex; flex-direction: column; justify-content: center;
+    opacity: 0; visibility: hidden; pointer-events: none; transition: opacity 0.4s ease;
+}
+.arch-pillar.active .arch-active { opacity: 1; visibility: visible; pointer-events: auto; }
+
+.arch-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 50px; border-bottom: 1px solid rgba(197, 160, 89, 0.2); padding-bottom: 30px; }
+.arch-subtitle { font-size: 0.75rem; color: var(--accent); text-transform: uppercase; letter-spacing: 4px; display: block; margin-bottom: 15px; }
+
+.arch-title { font-size: clamp(3rem, 5vw, 4.5rem); font-weight: 300; text-transform: uppercase; line-height: 1.05; display: flex; flex-wrap: wrap; gap: 15px; }
+.mask-wrap { display: inline-block; overflow: hidden; vertical-align: bottom; }
+.mask-text { display: inline-block; transform: translateY(110%); } 
+.arch-gold { font-family: var(--font-title); color: var(--accent); text-transform: none; font-size: 1.2em; font-weight: 400; transform: translateY(110%); padding-top: 5px; }
+
+.mag-close-wrap { padding: 20px; margin: -20px -20px 0 0; }
+.arch-close {
+    background: transparent; border: 1px solid rgba(197, 160, 89, 0.4); color: var(--text-main);
+    width: 55px; height: 55px; display: flex; align-items: center; justify-content: center;
+    transition: background 0.4s, color 0.4s, border-color 0.4s; border-radius: 50%; font-size: 1.5rem;
+}
+.arch-close:hover { background: var(--accent); color: #000; border-color: var(--accent); transform: scale(1.1); }
+
+.arch-form { display: flex; flex-direction: column; gap: 45px; max-width: 800px; }
+.arch-row { display: flex; gap: 40px; }
+.arch-input-wrap { position: relative; width: 100%; }
+
+.arch-form input, .arch-form textarea {
+    width: 100%; background: transparent; border: none; padding: 15px 0;
+    color: var(--text-main); font-size: 1.1rem; font-family: var(--font-body); outline: none; border-radius: 0px; resize: none;
+}
+.arch-line { position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: rgba(232, 220, 200, 0.15); }
+.arch-line::after { content: ''; position: absolute; bottom: 0; left: 50%; width: 0%; height: 1px; background: var(--accent); transition: width 0.5s cubic-bezier(0.16, 1, 0.3, 1), left 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
+
+.arch-form label { position: absolute; top: 15px; left: 0; color: var(--text-sec); pointer-events: none; transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1); font-size: 1rem; }
+.arch-form input:focus ~ label, .arch-form input:not(:placeholder-shown) ~ label, .arch-form textarea:focus ~ label, .arch-form textarea:not(:placeholder-shown) ~ label { top: -20px; font-size: 0.7rem; color: var(--accent); text-transform: uppercase; letter-spacing: 2px; }
+.arch-form input:focus ~ .arch-line::after, .arch-form textarea:focus ~ .arch-line::after { width: 100%; left: 0; }
+
+.arch-submit {
+    align-self: flex-start; background: transparent; border: 1px solid var(--accent); color: var(--accent);
+    padding: 18px 45px; font-family: var(--font-body); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px;
+    display: flex; align-items: center; gap: 15px; border-radius: 0px; transition: border-color 0.4s; position: relative; overflow: hidden; margin-top: 10px;
+}
+.btn-hover-fill { position: absolute; bottom: 0; left: 0; width: 100%; height: 0%; background: var(--accent); z-index: 1; transition: height 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
+.z-2 { position: relative; z-index: 2; transition: color 0.4s; }
+.arch-submit:hover .z-2 { color: #000; }
+.arch-submit:hover .btn-hover-fill { height: 100%; }
+.arch-submit:hover i { transform: translate(4px, -4px); }
+
+.form-el { opacity: 0; }
+
+@media (max-width: 1024px) {
+    body, a, button, input, select, textarea, .magnetic-wrap, .arch-pillar, .hamburger {
+        cursor: auto !important;
+    }
+    .cursor-dot, .cursor-ring, .cursor-ripple {
+        display: none !important;
+    }
+
+    .arch-container { flex-direction: column; }
+    .arch-pillar { border-right: none; border-bottom: 1px solid rgba(197, 160, 89, 0.2); }
+    .arch-pillar:last-child { border-bottom: none; }
+    
+    .arch-idle { flex-direction: row; padding: 0 30px; }
+    .arch-title-vertical { writing-mode: horizontal-tb; transform: none; font-size: 1.5rem; }
+    
+    .arch-active { padding: 80px 5%; justify-content: flex-start; overflow-y: auto; }
+    .arch-header { margin-bottom: 40px; flex-direction: column; align-items: flex-start; gap: 20px; }
+    
+    .mag-close-wrap { align-self: flex-end; margin-top: -80px; padding: 0; margin-right: 0; }
+    .arch-row { flex-direction: column; gap: 40px; }
+}
